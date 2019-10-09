@@ -1,1 +1,232 @@
-/* Compile your LESS file!! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: 'Poppins', sans-serif;
+  color: darkblue;
+}
+header {
+  display: flex;
+  background-color: lightblue;
+  padding: 20%;
+  border: 2px solid blue;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid green;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  border: 2px solid orange;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: silver;
+  padding: 5%;
+  border: 2px solid red;
+}
+.intro {
+  padding: 10px;
+}
+.bio {
+  padding-top: 20%;
+}
+.Lisa {
+  font-size: 50px;
+  color: seagreen;
+}
+.Cook {
+  font-size: 50px;
+  color: darkblue;
+}
+.skills h2 {
+  color: seagreen;
+  font-size: 20px;
+}
+.skills h4 {
+  padding-top: 15%;
+}
+.skills {
+  color: darkblue;
+  padding: 5px;
+}
+.character h2 {
+  color: seagreen;
+  font-size: 20px;
+}
+.character {
+  color: darkblue;
+  padding: 5px;
+}
+.character h4 {
+  padding-top: 15%;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+  border: 2px solid magenta;
+}
+.education,
+.experience h5 {
+  font-family: 'Poppins', sans-serif;
+  color: orange;
+  padding-top: 5%;
+}
+.education h5 {
+  padding-top: 5%;
+}

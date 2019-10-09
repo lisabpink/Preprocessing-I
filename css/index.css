@@ -153,7 +153,25 @@ header {
   display: flex;
   background-color: lightblue;
   padding: 20%;
-  border: 2px solid blue;
+}
+@media (max-width: 500px) {
+  header {
+    font-size: 30px;
+  }
+}
+header .name {
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  header .name {
+    font-size: 30px;
+  }
+}
+header .name .Lisa {
+  color: seagreen;
+}
+header .name .Cook {
+  color: darkblue;
 }
 header nav {
   display: flex;
@@ -161,14 +179,29 @@ header nav {
   align-items: center;
   width: 75%;
   height: 50px;
-  margin-top: 40px;
+  margin: 40px;
   margin-bottom: 40px;
-  border: 2px solid green;
+  font-family: 'Poppins', sans-serif;
+  color: darkblue;
+}
+header nav a {
   text-decoration: none;
+  color: darkblue;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container {
   display: flex;
-  border: 2px solid orange;
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .side-bar {
   display: flex;
@@ -176,41 +209,45 @@ header nav {
   width: 35%;
   background-color: silver;
   padding: 5%;
-  border: 2px solid red;
+}
+@media (max-width: 500px) {
+  .side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .intro {
   padding: 10px;
 }
-.bio {
+.intro .bio {
   padding-top: 20%;
 }
-.Lisa {
+.intro .name {
   font-size: 50px;
+}
+@media (max-width: 500px) {
+  .intro .name {
+    font-size: 40px;
+  }
+}
+.intro .name .Lisa {
   color: seagreen;
 }
-.Cook {
-  font-size: 50px;
+.intro .name .Cook {
   color: darkblue;
 }
-.skills h2 {
-  color: seagreen;
-  font-size: 20px;
-}
-.skills h4 {
-  padding-top: 15%;
-}
-.skills {
-  color: darkblue;
-  padding: 5px;
-}
-.character h2 {
-  color: seagreen;
-  font-size: 20px;
-}
+.skills,
 .character {
   color: darkblue;
   padding: 5px;
 }
+.skills h2,
+.character h2 {
+  color: seagreen;
+  font-size: 20px;
+}
+.skills h4,
 .character h4 {
   padding-top: 15%;
 }
@@ -219,7 +256,6 @@ header nav {
   flex-direction: column;
   width: 100%;
   padding: 5%;
-  border: 2px solid magenta;
 }
 .education,
 .experience h5 {

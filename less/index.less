@@ -57,48 +57,90 @@ table {
 html, body {
     height: 100%;
 }
-
+//stretch goal
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+
+//variables 
+@main-text-color: darkblue;
+@accent-text-color-green: seagreen;
+
+@padding:20%;
 
 
  h1, h2, h3, h4,
  p{
 	font-family:'Poppins', sans-serif;
-	color:darkblue;
+	color:@main-text-color;
 	
 }
 
 header{
 	display:flex;
 	background-color: lightblue;
-	padding:20%;
-	border:2px solid blue;
-	}
+	padding:@padding;
+	@media(max-width:500px){
+		font-size: 30px;
+	}//this closes media query
+
+
+
+	.name {
+		font-size: 50px;
+			@media(max-width:500px){
+				font-size: 30px;
+			}//this closes media query
+		.Lisa{
+			color:@accent-text-color-green;
+		}//this closes Lisa
+		
+		.Cook{
+			color:@main-text-color;
+		}//this closes Cook
+
+	}//this closes name
+	
+	
+	nav{
+		display:flex;
+		justify-content:space-around;
+		align-items: center;
+		width: 75%;
+		height:50px;
+		margin: 40px;
+		margin-bottom: 40px;
+		font-family:'Poppins', sans-serif;
+		color:@main-text-color;
+
+			a{
+				text-decoration: none;
+				color:@main-text-color;
+			} //this closes anchor tag
+
+		@media(max-width:500px){
+			display:flex;
+			flex-direction: column;
+	
+		}//this closes media query
+
+	} //this closes nav
+
+}// this closes header
 	
 
 
-header nav{
-	display:flex;
-	justify-content:space-around;
-	align-items: center;
-	width: 75%;
-	height:50px;
-    margin-top: 40px;
-	margin-bottom: 40px;
-	border: 2px solid green;
-	text-decoration: none;
-	
 
-}
 
 
 
 .container{
 	display:flex;
-	border: 2px solid orange;
-
-}
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: column;
+		
+	}//this closes media query
+}//this closes container
 
 
 
@@ -108,57 +150,74 @@ header nav{
 	width: 35%;
 	background-color: silver;
 	padding:5%;
-	border: 2px solid red;
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		
+	}//this closes media query
 }
 
 
 
 .intro{
 	padding:10px;
-}
-.bio{
-	padding-top:20%;
-}
 
-.Lisa{
-	font-size: 50px;
-	color:seagreen;
+	.bio{
+		padding-top:@padding;
+	}//this closes bio
 	
-}
-.Cook{
-	font-size: 50px;
-	color:darkblue;
-	
-}
+	.name {
+		font-size: 50px;
+			@media(max-width:500px){
+				font-size: 40px;
+			}//this closes media query
+		.Lisa{
+			color:@accent-text-color-green;
+		}//this closes Lisa
+		
+		.Cook{
+			color:@main-text-color;
+		}//this closes Cook
 
-.skills h2{
-	color:seagreen;
-	font-size: 20px;
+	}//this closes name
 
-}
-.skills h4{
-	padding-top:15%;
-}
+}//this closes intro
 
-.skills {
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills, .character {
 	color:darkblue;
 	padding:5px;
-}
 
-.character h2{
-	color:seagreen;
-	font-size: 20px;
+	 h2{
+		color:seagreen;
+		font-size: 20px;
+	}//this closes h2
 
-}
+	h4{
+		padding-top:15%;
+	} //this closes h4
 
-.character {
-	color:darkblue;
-	padding:5px;
-}
+} //this closes skills
 
-.character h4{
-	padding-top:15%;
-}
+
+
+
+
+
+
 
 
 
@@ -169,9 +228,8 @@ header nav{
 	flex-direction: column;
 	width:100%;
 	padding:5%;
-	border: 2px solid magenta;
+	
 }
-
 
 
 .education, .experience h5{

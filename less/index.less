@@ -60,7 +60,13 @@ html, body {
 //stretch goal
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+.display-flex(){
+	display:flex;
+}
 
+.flex-direction-column(){
+	flex-direction:column;
+}
 //variables 
 @main-text-color: darkblue;
 @accent-text-color-green: seagreen;
@@ -70,13 +76,14 @@ html, body {
 
  h1, h2, h3, h4,
  p{
+
 	font-family:'Poppins', sans-serif;
 	color:@main-text-color;
 	
 }
 
 header{
-	display:flex;
+	.display();
 	background-color: lightblue;
 	padding:@padding;
 	@media(max-width:500px){
@@ -102,7 +109,7 @@ header{
 	
 	
 	nav{
-		display:flex;
+		.display-flex();
 		justify-content:space-around;
 		align-items: center;
 		width: 75%;
@@ -118,8 +125,8 @@ header{
 			} //this closes anchor tag
 
 		@media(max-width:500px){
-			display:flex;
-			flex-direction: column;
+			.display-flex();
+			.flex-direction-column();
 	
 		}//this closes media query
 
@@ -134,10 +141,10 @@ header{
 
 
 .container{
-	display:flex;
+	.display-flex();
 	@media(max-width:500px){
-		display:flex;
-		flex-direction: column;
+		.display();
+		.flex-direction-column();
 		
 	}//this closes media query
 }//this closes container
@@ -145,8 +152,10 @@ header{
 
 
 .side-bar{
-	display:flex;
-	flex-direction: column;
+
+	
+	.display-flex()
+	.flex-direction-column();
 	width: 35%;
 	background-color: silver;
 	padding:5%;
@@ -161,9 +170,13 @@ header{
 
 
 .intro{
+
+	
+	
 	padding:10px;
 
 	.bio{
+		
 		padding-top:@padding;
 	}//this closes bio
 	
@@ -242,3 +255,5 @@ header{
 .education h5{
 	padding-top: 5%;
 }
+
+

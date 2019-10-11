@@ -141,6 +141,12 @@ body {
   font-display: swap;
   src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
 }
+.display-flex {
+  display: flex;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
 h1,
 h2,
 h3,
@@ -150,7 +156,6 @@ p {
   color: darkblue;
 }
 header {
-  display: flex;
   background-color: lightblue;
   padding: 20%;
 }
@@ -199,12 +204,10 @@ header nav a {
 }
 @media (max-width: 500px) {
   .container {
-    display: flex;
     flex-direction: column;
   }
 }
 .side-bar {
-  display: flex;
   flex-direction: column;
   width: 35%;
   background-color: silver;
@@ -265,4 +268,13 @@ header nav a {
 }
 .education h5 {
   padding-top: 5%;
+}
+footer {
+  background-color: lightblue;
+  padding: 20%;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 30px;
+  }
 }

@@ -60,11 +60,11 @@ html, body {
 //stretch goal
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-.display-flex(){
+.display-flex{
 	display:flex;
 }
 
-.flex-direction-column(){
+.flex-direction-column{
 	flex-direction:column;
 }
 //variables 
@@ -83,7 +83,7 @@ html, body {
 }
 
 header{
-	.display();
+	
 	background-color: lightblue;
 	padding:@padding;
 	@media(max-width:500px){
@@ -143,7 +143,7 @@ header{
 .container{
 	.display-flex();
 	@media(max-width:500px){
-		.display();
+		
 		.flex-direction-column();
 		
 	}//this closes media query
@@ -154,7 +154,7 @@ header{
 .side-bar{
 
 	
-	.display-flex()
+	
 	.flex-direction-column();
 	width: 35%;
 	background-color: silver;
@@ -257,3 +257,10 @@ header{
 }
 
 
+footer{
+	background-color: lightblue;
+	padding:@padding;
+	@media(max-width:500px){
+		font-size: 30px;
+	}//this closes media query
+}

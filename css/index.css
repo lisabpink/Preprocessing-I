@@ -119,162 +119,205 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
-}
-.display-flex {
-  display: flex;
-}
-.flex-direction-column {
-  flex-direction: column;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+}
 p {
-  font-family: 'Poppins', sans-serif;
-  color: darkblue;
-}
-header {
-  background-color: lightblue;
-  padding: 20%;
-}
-@media (max-width: 500px) {
-  header {
-    font-size: 30px;
-  }
-}
-header .name {
-  font-size: 50px;
-}
-@media (max-width: 500px) {
-  header .name {
-    font-size: 30px;
-  }
-}
-header .name .Lisa {
-  color: seagreen;
-}
-header .name .Cook {
-  color: darkblue;
-}
-header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 75%;
-  height: 50px;
-  margin: 40px;
-  margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
-  color: darkblue;
-}
-header nav a {
-  text-decoration: none;
-  color: darkblue;
-}
-@media (max-width: 500px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-  }
+  line-height: 1.4;
 }
 .container {
-  display: flex;
+  margin: 0 5%;
 }
-@media (max-width: 500px) {
-  .container {
+nav {
+  display: flex;
+  background-color: seashell;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+@media (max-width: 650px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+nav img {
+  margin: 20px 30px 20px 20px;
+}
+@media (max-width: 650px) {
+  nav img {
+    margin: 5px;
+  }
+}
+nav .navContainer {
+  margin: 5% 5% 5% 0;
+}
+nav .navContainer a {
+  text-decoration: none;
+}
+@media (max-width: 650px) {
+  nav .navContainer a {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  background: black;
+}
+footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
+}
+@media (max-width: 650px) {
+  footer nav {
     flex-direction: column;
   }
 }
-.side-bar {
-  flex-direction: column;
-  width: 35%;
-  background-color: silver;
-  padding: 5%;
+footer nav a {
+  color: white;
+  text-decoration: none;
 }
-@media (max-width: 500px) {
-  .side-bar {
-    display: flex;
+.skills {
+  border-bottom: 1px dashed black;
+  width: 100%;
+}
+.skills .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10%;
+}
+@media (max-width: 650px) {
+  .skills .boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: none;
+  }
+}
+.skills .boxes .box1 {
+  width: 12.5%;
+  height: 100px;
+  background: lightsalmon;
+  border-radius: 15%;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 650px) {
+  .skills .boxes .box1 {
     flex-direction: column;
     width: 100%;
   }
 }
-.intro {
-  padding: 10px;
+.topContent {
+  margin: 10%;
 }
-.intro .bio {
-  padding-top: 20%;
+.topContent p {
+  margin-bottom: 20px;
 }
-.intro .name {
-  font-size: 50px;
-}
-@media (max-width: 500px) {
-  .intro .name {
-    font-size: 40px;
-  }
-}
-.intro .name .Lisa {
-  color: seagreen;
-}
-.intro .name .Cook {
-  color: darkblue;
-}
-.skills,
-.character {
-  color: darkblue;
-  padding: 5px;
-}
-.skills h2,
-.character h2 {
-  color: seagreen;
-  font-size: 20px;
-}
-.skills h4,
-.character h4 {
-  padding-top: 15%;
-}
-.main-content {
+.topContent h1 {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 5%;
+  justify-content: center;
+  font-size: 35px;
+  border: 2px solid black;
+  border-radius: 15%;
+  padding: 3%;
 }
-.education,
-.experience h5 {
-  font-family: 'Poppins', sans-serif;
-  color: orange;
-  padding-top: 5%;
+.bottomContent {
+  margin: 20px 0;
 }
-.education h5 {
-  padding-top: 5%;
+.middleBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10%;
 }
-footer {
-  background-color: lightblue;
-  padding: 20%;
-}
-@media (max-width: 500px) {
-  footer {
-    font-size: 30px;
+@media (max-width: 650px) {
+  .middleBoxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
+}
+.middleBoxes .productBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+  margin: 2%;
+}
+@media (max-width: 650px) {
+  .middleBoxes .productBoxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+.productBoxes img {
+  width: 100%;
+  margin: 50px 0;
+}
+.gradient-button {
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.gradient-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
+}
+.gradient-button-1 {
+  background-image: linear-gradient(to right, #dd5e89 0%, #f7bb97 51%, #dd5e89 100%);
+}
+.gradient-button-1:hover {
+  background-position: right center;
 }

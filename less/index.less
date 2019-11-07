@@ -1,59 +1,353 @@
-// Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  line-height: 1.4;
+}
+
+
+
+.container{
+  margin: 0 5%;
+}
+
+nav {
+  display: flex;
+  background-color: seashell;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px 0;
+  @media (max-width:650px){
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+  img{
+	margin:20px 30px 20px 20px;
+	@media (max-width:650px){
+		margin: 5px;
+	}
+}
+  .navContainer {
+    margin: 5% 5% 5% 0;
+    a {
+	  text-decoration: none;
+	  @media (max-width:650px){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width:100%;
+		
+	}
+	}//this closes
+	
+  }//this closes
+}//this closes
+
+footer {
+  width: 100%;
+  background: black;
+  nav {
+	@media (max-width:650px){
+		flex-direction: column;
+		
+	}
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+	font-size: 14px;
+	
+    a {
+      color: white;
+      text-decoration: none;
+    }//this closes
+  }//this closes
+}//this closes
+
+
+.skills {
+    
+	border-bottom: 1px dashed black;
+	width: 100%;
+	
+	
+	.boxes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin:10%;
+		@media (max-width:650px){
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width:100%;
+			margin:none;
+			
+			
+		}
+		
+		.box1 {
+			width: 12.5%;
+			height: 100px;
+			background: lightsalmon;
+			border-radius: 15%;
+			margin: 20px 2.5%;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@media (max-width:650px){
+				flex-direction: column;
+				
+				width:100%;
+			
+				
+			}
+		}//this closes
+	}//this closes
+}//this closes
+
+
+
+
+
+
+
+.topContent {
+  margin:10%;
+  
+  p {
+    margin-bottom: 20px;
+  }//this closes p
+  h1{
+	  display: flex;
+	justify-content: center; 
+	font-size: 35px;
+	border:2px solid black;
+	border-radius: 15%;
+	padding:3%;
+  }
+}//this closes .topContent
+
+.bottomContent {
+  margin: 20px 0;
+}
+
+.middleBoxes{
+	@media (max-width:650px){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width:100%;
+	}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:10%;
+  
+  .productBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+	margin: 2%;
+	@media (max-width:650px){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width:50%;
+	}
+	
+  } //this closes productBoxes
+} //this closes middleBoxes
+
+.productBoxes img {
+  width: 100%;
+  margin: 50px 0;
+}
+
+
+.gradient-button {
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.gradient-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
+}
+.gradient-button-1 {
+  background-image: linear-gradient(
+    to right,
+    #dd5e89 0%,
+    #f7bb97 51%,
+    #dd5e89 100%
+  );
+}
+.gradient-button-1:hover {
+  background-position: right center;
+}

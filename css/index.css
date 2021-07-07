@@ -1,1 +1,280 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+.display-flex {
+  display: flex;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: 'Poppins', sans-serif;
+  color: darkblue;
+}
+header {
+  background-color: lightblue;
+  padding: 20%;
+}
+@media (max-width: 500px) {
+  header {
+    font-size: 30px;
+  }
+}
+header .name {
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  header .name {
+    font-size: 30px;
+  }
+}
+header .name .Lisa {
+  color: seagreen;
+}
+header .name .Cook {
+  color: darkblue;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 50px;
+  margin: 40px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: darkblue;
+}
+header nav a {
+  text-decoration: none;
+  color: darkblue;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.side-bar {
+  flex-direction: column;
+  width: 35%;
+  background-color: silver;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.intro {
+  padding: 10px;
+}
+.intro .bio {
+  padding-top: 20%;
+}
+.intro .name {
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  .intro .name {
+    font-size: 40px;
+  }
+}
+.intro .name .Lisa {
+  color: seagreen;
+}
+.intro .name .Cook {
+  color: darkblue;
+}
+.skills,
+.character {
+  color: darkblue;
+  padding: 5px;
+}
+.skills h2,
+.character h2 {
+  color: seagreen;
+  font-size: 20px;
+}
+.skills h4,
+.character h4 {
+  padding-top: 15%;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+}
+.education,
+.experience h5 {
+  font-family: 'Poppins', sans-serif;
+  color: orange;
+  padding-top: 5%;
+}
+.education h5 {
+  padding-top: 5%;
+}
+footer {
+  background-color: lightblue;
+  padding: 20%;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 30px;
+  }
+}

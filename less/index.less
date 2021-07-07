@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -56,4 +57,210 @@ table {
 html, body {
     height: 100%;
 }
+//stretch goal
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+.display-flex{
+	display:flex;
+}
+
+.flex-direction-column{
+	flex-direction:column;
+}
+//variables 
+@main-text-color: darkblue;
+@accent-text-color-green: seagreen;
+
+@padding:20%;
+
+
+ h1, h2, h3, h4,
+ p{
+
+	font-family:'Poppins', sans-serif;
+	color:@main-text-color;
+	
+}
+
+header{
+	
+	background-color: lightblue;
+	padding:@padding;
+	@media(max-width:500px){
+		font-size: 30px;
+	}//this closes media query
+
+
+
+	.name {
+		font-size: 50px;
+			@media(max-width:500px){
+				font-size: 30px;
+			}//this closes media query
+		.Lisa{
+			color:@accent-text-color-green;
+		}//this closes Lisa
+		
+		.Cook{
+			color:@main-text-color;
+		}//this closes Cook
+
+	}//this closes name
+	
+	
+	nav{
+		.display-flex();
+		justify-content:space-around;
+		align-items: center;
+		width: 75%;
+		height:50px;
+		margin: 40px;
+		margin-bottom: 40px;
+		font-family:'Poppins', sans-serif;
+		color:@main-text-color;
+
+			a{
+				text-decoration: none;
+				color:@main-text-color;
+			} //this closes anchor tag
+
+		@media(max-width:500px){
+			.display-flex();
+			.flex-direction-column();
+	
+		}//this closes media query
+
+	} //this closes nav
+
+}// this closes header
+	
+
+
+
+
+
+
+.container{
+	.display-flex();
+	@media(max-width:500px){
+		
+		.flex-direction-column();
+		
+	}//this closes media query
+}//this closes container
+
+
+
+.side-bar{
+
+	
+	
+	.flex-direction-column();
+	width: 35%;
+	background-color: silver;
+	padding:5%;
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		
+	}//this closes media query
+}
+
+
+
+.intro{
+
+	
+	
+	padding:10px;
+
+	.bio{
+		
+		padding-top:@padding;
+	}//this closes bio
+	
+	.name {
+		font-size: 50px;
+			@media(max-width:500px){
+				font-size: 40px;
+			}//this closes media query
+		.Lisa{
+			color:@accent-text-color-green;
+		}//this closes Lisa
+		
+		.Cook{
+			color:@main-text-color;
+		}//this closes Cook
+
+	}//this closes name
+
+}//this closes intro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills, .character {
+	color:darkblue;
+	padding:5px;
+
+	 h2{
+		color:seagreen;
+		font-size: 20px;
+	}//this closes h2
+
+	h4{
+		padding-top:15%;
+	} //this closes h4
+
+} //this closes skills
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	padding:5%;
+	
+}
+
+
+.education, .experience h5{
+   font-family:'Poppins', sans-serif;
+   color:orange;
+   padding-top: 5%;
+   
+}
+
+.education h5{
+	padding-top: 5%;
+}
+
+
+footer{
+	background-color: lightblue;
+	padding:@padding;
+	@media(max-width:500px){
+		font-size: 30px;
+	}//this closes media query
+}
